@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Madlibs</title>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="hobby.html">Hobby's</a>
+        <a href="mini%20projects.html">Mini Projects</a>
+        <a href="calc.html">Calculator</a>
+        <a class="active" href="MadLib.html">Madlibss</a>
+        <a href="quiz.html">Quiz!</a>
+    </div>
+    <link rel="stylesheet" href="TopNav.css">
+    <script type="text/javascript">
+        function madLib()
+        {
+            var words = [];
+            var words0 = document.MadLib.words0.value.bold();
+            var words1 = document.MadLib.words1.value.bold();
+            var words2 = document.MadLib.words2.value.bold();
+            var words3 = document.MadLib.words3.value.bold();
+            var words4 = document.MadLib.words4.value.bold();
+            var words5 = document.MadLib.words5.value.bold();
+            var words6 = document.MadLib.words6.value.bold();
+            var words7 = document.MadLib.words7.value.bold();
+            var words8 = document.MadLib.words8.value.bold();
+            var words9 = document.MadLib.words9.value.bold();
+            var words10 = document.MadLib.words10.value.bold();
+            var words11 = document.MadLib.words11.value.bold();
+            var words12 = document.MadLib.words12.value.bold();
+
+            words.push( words0,words1,words2,words3,words4,words5,words6,words7,words8,words9,words10,words11,words12 );
+            {
+
+                return "Spring vacation usually falls around Easter time. The schools are closed and all the " + words[0] + " get " + words[1] + " weeks off. The " + words[2] + " teachers also get a vacation. There are lots of " +
+                    " things to do during Easter vacation. Some kids loaf around and watch the " + words[3] + " .Others get outside and play " + words[4] + " while more ambitious students spend their time studying " +
+                    " their" + words[5] + " books so they will grow up to become " + words[6] + " Little kids also color " + words[7] + " eggs Here's how you color an egg: first, mix a package of " + words[8] + " dye in a bowl full of " + words[9] + " Then, dip an "
+                    + words[10] + " in the bowl and rinse it off with " + words[11] + " Then, after it dries, you can paint it with a brush. Then you show it to your friends, who will say, Boy what a(n) " + words[12] + " egg! "
+
+
+
+            }
+        }
+    </script>
+
+
+
+</head>
+<body>
+<form name="MadLib">
+    <font color="white">
+        Plural Noun 1: <input type="text" id="words0">
+        <br><br>
+        A number: <input type="text" id="words1">
+        <br><br>
+        Adjective 1: <input type="text" id="words2">
+        <br><br>
+        Noun 1: <input type="text" id="words3">
+        <br><br>
+        Type of Game: <input type="text" id="words4">
+        <br><br>
+        Adjective 2: <input type="text" id="words5">
+        <br><br>
+        Plural Noun 2: <input type="text" id="words6">
+        <br><br>
+        Adjective 3: <input type="text" id="words7">
+        <br><br>
+        Adjective 4: <input type="text" id="words8">
+        <br><br>
+        Type of Liquid 1: <input type="text" id="words9">
+        <br><br>
+        Noun 2: <input type="text" id="words10">
+        <br><br>
+        Type of Liquid 2: <input type="text" id="words11">
+        <br><br>
+        Adjective 5: <input type="text" id="words12">
+        <br><br>
+        <button type="button" onclick="document.getElementById('story').innerHTML=madLib()">Create!</button>
+        <p id="story"></p>
+    </font>
+</body>
+</html>

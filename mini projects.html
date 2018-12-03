@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="hobby.html">Hobby's</a>
+        <a class="active" href="mini%20projects.html">Mini Projects</a>
+        <a href="calc.html">Calculator</a>
+        <a href="MadLib.html">Madlibss</a>
+        <a href="quiz.html">Quiz!</a>
+    </div>
+    <style>
+        div.a {
+            font-size: large;
+        }
+    </style>
+    <script src="temperature.js"></script>
+    <link rel="stylesheet" href="Box.css">
+    <title>Mini Projects</title>
+    <link rel="stylesheet" href="TopNav.css">
+</head>
+<font color="white"><h1>Javascripts Mini Projects</h1></font>
+<body>
+<form name="temperature">
+    <img id="summer" src="im">
+    <font color="white"><h4>Temperature</h4></font>
+    <br><br>
+    <font color="white">Type in the temperature number to convert to a season:</font>
+    <input name="input1" type="text">
+    <br><br>
+    <font color="white">Result:</font> <input name="result" type="text" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.temperature.result.value=temperatureBug()">Convert!</button>
+</form>
+<br><br>
+
+<form name="CalorieCounter">
+    <font color="white"><h4>Calorie Counter</h4></font>
+    <br><br>
+    <font color="white">Select one of the following activates: Running, Walking, Weight lifting:</font>
+    <input name="input1" type="text">
+    <br><br>
+    <font color="white">Amount of time in MINUTES doing the activity:</font>
+    <input name="minutes" type="text">
+    <br><br>
+    <font color="white">Result: <input name="result" type="text" readonly="true"></font>
+    <br><br>
+    <button type="button" onclick="document.CalorieCounter.result.value=calorieCounter()">Get Calories!</button>
+</form>
+
+<form name="project3">
+    <font color="white"><h4>Grades</h4></font>
+    <br><br>
+    <font color="white">Type in your number grade to convert to letter grade</font>
+    <input name="input1" type="text">
+    <br><br>
+    <font color="white">Result: <input name="Result" type="text" readonly="true"></font>
+    <br><br>
+    <button type="button" onclick="document.project3.Result.value=assignGrade()">Convert!</button>
+</form>
+
+<br><br>
+<h3>
+    <font color="white">Binary Converter</font>
+<form name="toBinary">
+    <font color="white">Type in a base 10 number to convert to base 2 number!</font>
+    <input name="input1" type="text">
+    <font color="white">Result: <input name="result" type="text" readonly="true"></font>
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall()">Convert!</button>
+</form>
+<form name="toNum">
+    <font color="white">Type in a base 2 number to convert to base 10 number!</font>  <input name="input2" type="text">
+    <font color="white"> Result: <input name="result" type="text" readonly="true"> </font>
+    <button type="button" onclick="document.toNum.result.value=smallToTen()">Convert!</button>
+</form>
+</h3>
+
+</body>
+</html>

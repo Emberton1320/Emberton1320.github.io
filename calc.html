@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="hobby.html">Hobby's</a>
+        <a href="mini%20projects.html">Mini Projects</a>
+        <a class="active" href="calc.html">Calculator</a>
+        <a href="MadLib.html">Madlibss</a>
+        <a href="quiz.html">Quiz!</a>
+    </div>
+    <link rel="stylesheet" href="Box.css">
+    <link rel="stylesheet" href="TopNav.css">
+    <script src="temperature.js">
+    </script>
+    <title>Calculator!</title>
+</head>
+<body>
+<h2>
+    <font color="white"
+    <center>
+        <form name="calculator" class="calculator">
+
+            <input name="calcWindow" type="text" readonly="true" size="30px">
+            <br><br>
+            <button class="button" type="button" value="1" onclick="document.calculator.calcWindow.value+=1">1</button>
+            <button class="button" type="button" value="2" onclick="document.calculator.calcWindow.value+=2">2</button>
+            <button class="button" type="button" value="3" onclick="document.calculator.calcWindow.value+=3">3</button>
+            <br><br>
+            <button class="button" type="button" value="4" onclick="document.calculator.calcWindow.value+=4">4</button>
+            <button class="button" type="button" value="5" onclick="document.calculator.calcWindow.value+=5">5</button>
+            <button class="button" type="button" value="6" onclick="document.calculator.calcWindow.value+=6">6</button>
+            <br><br>
+            <button class="button" type="button" value="7" onclick="document.calculator.calcWindow.value+=7">7</button>
+            <button class="button" type="button" value="8" onclick="document.calculator.calcWindow.value+=8">8</button>
+            <button class="button" type="button" value="9" onclick="document.calculator.calcWindow.value+=9">9</button>
+            <br><br>
+            <button class="button" type="button" value="*" onclick="document.calculator.calcWindow.value+='*'">*</button>
+            <button class="button" type="button" value="-" onclick="document.calculator.calcWindow.value+='-'">-</button>
+            <button class="button" type="button" value="+" onclick="document.calculator.calcWindow.value+='+'">+</button>
+            <button class="button" type="button" value="/" onclick="document.calculator.calcWindow.value+='/'">/</button>
+            <br><br>
+            <button class="button" type="reset">Clear</button>
+            <button class="button" type="button" value="=" onclick="document.calculator.calcWindow.value=calculate(document.calculator.calcWindow.value)">=</button>
+            <button class="button" type="button" value="√" onclick="document.calculator.calcWindow.value+='√'">√</button>
+        </form>
+    </center>
+</font>
+</h2>
+</body>
+</html>

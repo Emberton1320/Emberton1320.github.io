@@ -1,0 +1,37 @@
+h2 {
+    outline: 4px solid red;
+    outline-offset: 15px;
+}
+
+h3 {
+    outline: 4px solid red;
+    outline-offset: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.calculator
+{
+    background-color: red;
+    width: 250px;
+    height: 415px
+}
